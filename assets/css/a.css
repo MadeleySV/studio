@@ -4,7 +4,38 @@
 body  {
     background-color: rgb(190, 232, 218);
 } 
+
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  ul {
+    display: flex; 
+    justify-content: center; 
+  }
+  
+  li {
+    margin-right: 20px; 
+  }
+
+
+button {
+    padding: 10px;
+    background-color: #ffffff; 
+    border: none; 
+    color: #000000; 
+    cursor: pointer; 
+  }
+  
+  button:hover {
+    background-color: #fbff25; 
+  }
+  
  
+  
 
 
 h1 { 
