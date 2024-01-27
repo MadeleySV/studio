@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Inter:wght@100..900&display=swap');
 
+
+body  {
+    background-color: rgb(190, 232, 218);
+} 
+ 
+
+
 h1 { 
     font-family: "Gowun Batang", serif;
   }
@@ -20,3 +27,4 @@ h1 {
 .poster {
     width: 280px;
 }
+

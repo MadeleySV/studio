@@ -24,28 +24,51 @@ $(document).ready(() => {
                 
                 let director = $('<p></p>');
                 director.append(movie.director);
-
-                let description = $('<p></p>');
-                description.append(movie.description);
-
-                let productor = $('<p></p>');
-                productor.append(movie.productor);
             
                 card.append(poster);
                 card.append(titulo);
                 card.append(year);
                 card.append(director);
-                card.append(description);
-                card.append(productor);
-   
+
                 $('.container').append(card);
 
-    
+                movie.people.forEach(person => {
+                    let personCard = $('<div></div>');
+                    personCard.addClass('card');
+
+                    let personPoster = $('<img />');
+                    personPoster.addClass('poster');
+                    personPoster.attr('src', person.poster);
+
+                    let personName = $('<h3></h3>');
+                    personName.append(person.nombre);
+
+                    let personGender = $('<p></p>');
+                    personGender.append(person.genero);
+
+                    let personAge = $('<p></p>');
+                    personAge.append(person.edad);
+
+                    let personEyes = $('<p></p>');
+                    personEyes.append(person["eye_color"]);
+
+                    let personHair = $('<p></p>');
+                    personHair.append(person["hair_color"]);
+
+                    let personSpecies = $('<p></p>');
+                    personSpecies.append(person.especie);
+
+                    personCard.append(personPoster);
+                    personCard.append(personName);
+                    personCard.append(personGender);
+                    personCard.append(personAge);
+                    personCard.append(personEyes);
+                    personCard.append(personHair);
+                    personCard.append(personSpecies);
+
+                    $('.container').append(personCard);
+                });
             });
-
-
         }
-    
-
     });
-});
+})

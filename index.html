@@ -12,12 +12,18 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <input type="text" placeholder="buscar..">
-        <div class="btn">
-          <i class="fa fa-search"></i>
-        </div>
+    
 
+    <div class="div1">
+    <form action="/ruta-donde-manipularas-la-busqueda" method="GET">
+        <label for="searchQuery">Buscar:</label>
+        <input type="text" id="searchQuery" name="q" placeholder="Ingresa tu búsqueda" required>
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+  
+
+      
         <h1> STUDIO GHIBLI </h1>
         <nav
           <li><button>Año</button>
